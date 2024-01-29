@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/pages/Login.dart';
 import 'package:flutterapp/pages/listView.dart';
+import 'package:flutterapp/pages/pageView.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: Login(),
-      home: List(),
+      home: Page_View(),
     );
   }
 }
