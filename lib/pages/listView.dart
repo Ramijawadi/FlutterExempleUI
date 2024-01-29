@@ -15,8 +15,15 @@ class List extends StatelessWidget {
             style: TextStyle(color: Colors.white),
           ),
         ),
-        body: ListView.builder(
-            itemCount: 10,
+        body: ListView.separated(
+            separatorBuilder: (context, separator) {
+              return Container(
+                height: 5,
+                width: double.infinity,
+                color: Colors.blueAccent,
+              );
+            },
+            itemCount: 9,
             itemBuilder: (context, index) {
               return ListTile(
                 leading: Container(
@@ -27,7 +34,8 @@ class List extends StatelessWidget {
                 ),
                 title: Text('Username'),
                 subtitle: Text('some details'),
-                trailing: Icon(Icons.delete),
+                trailing:
+                    Icon(Icons.delete, color: Color.fromARGB(255, 12, 64, 154)),
               );
             }));
   }
