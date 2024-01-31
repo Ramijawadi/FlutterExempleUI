@@ -17,6 +17,11 @@ class _Page_ViewState extends State<Page_View> {
             backgroundColor: Colors.blueGrey,
             title: Text("Page View", style: TextStyle(color: Colors.white))),
         body: PageView(
+          // scrollDirection: Axis.vertical,
+          scrollDirection: Axis.vertical,
+          // physics: BouncingScrollPhysics(),
+          physics: ScrollPhysics(),
+
           children: [
             Container(
               color: Colors.red,

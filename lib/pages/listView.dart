@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 class List extends StatelessWidget {
   const List({super.key});
 
+  get length => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

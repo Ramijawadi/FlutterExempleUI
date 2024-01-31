@@ -16,7 +16,7 @@ class _RegiterState extends State<Regiter> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: Color.fromARGB(255, 26, 129, 208),
+            backgroundColor: Color.fromRGBO(108, 99, 255, 1.0),
             title: Center(
               child: Text(
                 "Register here ",
@@ -71,11 +71,14 @@ class _RegiterState extends State<Regiter> {
                     SizedBox(
                       height: 22,
                     ),
-                    Text("Forget password ",
-                        style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.blue)),
+                    Text(
+                      "Forget password ",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                        color: Color.fromRGBO(108, 99, 255, 1.0),
+                      ),
+                    ),
                     SizedBox(
                       height: 22,
                     ),
@@ -83,7 +86,7 @@ class _RegiterState extends State<Regiter> {
                       width: 300,
                       height: 40,
                       decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: Color.fromRGBO(108, 99, 255, 1.0),
                           borderRadius: BorderRadius.circular(20)),
                       child: Center(
                         child: Text("Register",

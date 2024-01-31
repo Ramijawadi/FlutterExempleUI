@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutterapp/main.dart';
 import 'package:flutterapp/pages/regsiter.dart';
 
 class Login extends StatefulWidget {
@@ -15,10 +16,10 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: Color.fromARGB(255, 26, 129, 208),
+            backgroundColor: Color.fromRGBO(108, 99, 255, 1.0),
             title: Center(
               child: Text(
-                "Login application ",
+                "LifeApp ",
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 25,
@@ -64,9 +65,10 @@ class _LoginState extends State<Login> {
                     ),
                     Text("Forget password ?",
                         style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.blue)),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color: Color.fromRGBO(108, 99, 255, 1.0),
+                        )),
                     SizedBox(
                       height: 22,
                     ),
@@ -74,14 +76,23 @@ class _LoginState extends State<Login> {
                       width: 300,
                       height: 40,
                       decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: Color.fromRGBO(108, 99, 255, 1.0),
                           borderRadius: BorderRadius.circular(20)),
                       child: Center(
-                        child: Text("Login",
-                            style: TextStyle(
-                                fontSize: 22,
-                                fontWeight: FontWeight.w400,
-                                color: Colors.white)),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomePage()),
+                            );
+                          },
+                          child: Text("Login",
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.w400,
+                                  color: Colors.white)),
+                        ),
                       ),
                     )
                   ],
